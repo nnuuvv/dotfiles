@@ -9,6 +9,12 @@ if [ -d "$HOME/.local/bin" ] ; then
   PATH="$PATH:$HOME/.local/bin"
 fi
 
+if [[ ! -e "$HOME/.local/bin/zoxide" ]]; then
+    curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+fi
+
+
+
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -80,10 +86,10 @@ eval "$(zoxide init --cmd cd zsh)"
 path+=('/snap/bin')
 path+=('/home/linuxbrew/.linuxbrew/bin')
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 # Set ghcup-env
-[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
+# [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
 
 # Set rust-env
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
