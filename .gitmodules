@@ -1,0 +1,3 @@
+[submodule "/home/liv/dotfiles/dot_config/nvim"]
+	path = /home/liv/dotfiles/dot_config/nvim
+	url = git@git.nuv.sh:nuv/nvim
