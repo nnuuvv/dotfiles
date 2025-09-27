@@ -1,1 +1,1 @@
-[{"dotfiles_path":"dotfiles/dot_config/nvim","target_path":".config/nvim"},{"dotfiles_path":"dotfiles/dot_config/wezterm","target_path":".config/wezterm"},{"dotfiles_path":"dotfiles/dot_zshrc","target_path":".zshrc"}]
+[{"dotfiles_path":"dotfiles/dot_config/nvim","target_path":".config/nvim"},{"dotfiles_path":"dotfiles/dot_config/wezterm","target_path":".config/wezterm"},{"dotfiles_path":"dotfiles/dot_zshrc","target_path":".zshrc"},{"dotfiles_path":"dotfiles/dot_ssh/config","target_path":".ssh/config"}]
