@@ -96,8 +96,15 @@ path+=('/home/linuxbrew/.linuxbrew/bin')
 
 
 . "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
 
-export ZELLIJ_AUTO_ATTACH=true
+#export ZELLIJ_AUTO_ATTACH=true
 
 eval "$(zellij setup --generate-auto-start zsh)"
+
+# bun completions
+[ -s "/home/liv/.bun/_bun" ] && source "/home/liv/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
